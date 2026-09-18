@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: flight-booking-backend
+    runtime: node
+    rootDir: flight-booking-backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
